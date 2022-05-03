@@ -12,7 +12,7 @@ void init(void)
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     q = gluNewQuadric();
 // Inicializa display lists
-    glNewList(TACA, GL_COMPILE); // TaÁa
+    glNewList(TACA, GL_COMPILE); // Ta√ßa
 
     glPushMatrix();
     glRotatef(90.0, 1.0, 0.0, 0.0);
@@ -51,7 +51,7 @@ void perspectiva(int w, int h)
     glViewport(0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-//projeÁ„o perspectiva
+//proje√ß√£o perspectiva
     gluPerspective(60.0, (GLfloat)w/(GLfloat)h, 1.0, 100.0);
     gluLookAt(-10.0, 30.0, 50.0, 0.0, -2.0, 0.0, 0.0, 1.0, 0.0);
     glMatrixMode(GL_MODELVIEW);
@@ -62,7 +62,7 @@ void orto_cima(int w, int h)
     glViewport(0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-//projeÁ„o ortogr·fica
+//proje√ß√£o ortogr√°fica
     glOrtho(-30.0, 30.0, -30.0, 30.0, 1.0, 250.0);
 //vista de cima
     gluLookAt(0.0, 250.0, 30.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
@@ -74,7 +74,7 @@ void orto_frontal(int w, int h)
     glViewport(0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-//projeÁ„o ortogr·fica
+//proje√ß√£o ortogr√°fica
     glOrtho(-30.0, 30.0, -30.0, 30.0, 1.0, 250.0);
 // vista frontal
     gluLookAt(-5.0, 0.0, 30.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
