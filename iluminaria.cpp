@@ -19,20 +19,20 @@ void init(void)
     glTranslatef (-5.0, 0.0, 0.0);
     glRotatef(135.0, 0.0, 1.0, 0.0);
     glRotatef(-35.0, 1.0, 0.0, 0.0);
-    gluCylinder(q, 5.0, 1.0, 7.0, 9.0, 3.0);
+    gluCylinder(q, 5.0, 1.0, 10.0, 9.0, 3.0);
     glPopMatrix();
 
     glPushMatrix();
-    glScalef(1.0, 2.0, 1.0);
-    glTranslatef(0.0, 2.0, -5.0);
+    glScalef(1.0, 3.0, 1.0);
+    glTranslatef(2.0, 2.0, -7.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
     gluCylinder(q, 1.0, 1.0, 10.0, 5.0, 5.0);
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef (0.0, -16.0, -5.0);
+    glTranslatef (2.0, -24.0, -8.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
-    gluDisk (q, 1.0, 3.0, 9, 2);
+    gluDisk(q, 1.0, 3.0, 9, 2);
     glPopMatrix();
 
     glEndList();
