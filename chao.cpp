@@ -13,15 +13,15 @@ void init(void)
     glNewList(CHAO, GL_COMPILE); // Chao
 
     glPushMatrix();
-    glTranslatef(-25.0, 0.0, -30.0);
+    glTranslatef(-30.0, 0.0, -30.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
     glBegin(GL_TRIANGLE_STRIP);
-    for(float y = 1.0; y < 40.0; y++){
-        for(float x = 1.0; x < 40.0; x++){
+    for(float y = 1.0; y < 50.0; y += 5.0){
+        for(float x = 1.0; x < 50.0; x += 5.0){
             glVertex3f (x, y, 0.0);
-            glVertex3f (10.0 + x, y, 0.0);
-            glVertex3f (x, 10.0 + y, 0.0);
-            glVertex3f (10.0 + x, 10.0 + y, 0.0);
+            glVertex3f (5.0 + x, y, 0.0);
+            glVertex3f (x, 5.0 + y, 0.0);
+            glVertex3f (5.0 + x, 5.0 + y, 0.0);
         }
     }
     glEnd();
