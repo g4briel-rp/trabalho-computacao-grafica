@@ -20,10 +20,10 @@ void init(void)
 
     q = gluNewQuadric();
 
-// Inicializa display lists para criação do chão
+// Inicializa display lists para criaÃ§Ã£o do chÃ£o
     glNewList(CHAO, GL_COMPILE);
 
-// Criação da malha formada por triangulos adjacentes e as Transformações geometricas utilizadas
+// CriaÃ§Ã£o da malha formada por triangulos adjacentes e as TransformaÃ§Ãµes geometricas utilizadas
     glPushMatrix();
     glTranslatef(-44.0, -11.5, -65.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
@@ -41,40 +41,40 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da mesa
+// Inicializa display lists para criaÃ§Ã£o da mesa
     glNewList(MESA, GL_COMPILE); // Mesa
 
-//Criação da tabua da mesa.
+//CriaÃ§Ã£o da tabua da mesa.
     glPushMatrix();
     glTranslatef(0.0, 10.0, 0.0);
     glScalef(5.0, 0.5, 10.0);
     glutWireCube(5.0);
     glPopMatrix();
 
-// Criação do pé da mesa
+// CriaÃ§Ã£o do pÃ© da mesa
 
-//pé esquerdo inferior
+//pÃ© esquerdo inferior
     glPushMatrix();
     glTranslatef(-8.0, -1.4, 20.0);
     glScalef(0.5, 4.0, 0.5);
     glutWireCube(5.0);
     glPopMatrix();
 
-//pé direito inferior
+//pÃ© direito inferior
     glPushMatrix();
     glTranslatef(8.0, -1.4, 20.0);
     glScalef(0.5, 4.0, 0.5);
     glutWireCube(5.0);
     glPopMatrix();
 
-//pé esquerdo superior
+//pÃ© esquerdo superior
     glPushMatrix();
     glTranslatef(-8.0, -1.4, -20.0);
     glScalef(0.5, 4.0, 0.5);
     glutWireCube(5.0);
     glPopMatrix();
 
-//pé direito superior
+//pÃ© direito superior
     glPushMatrix();
     glTranslatef(8.0, -1.4, -20.0);
     glScalef(0.5, 4.0, 0.5);
@@ -83,10 +83,10 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da cadeira da esquerda
+// Inicializa display lists para criaÃ§Ã£o da cadeira da esquerda
     glNewList(CADEIRA_E, GL_COMPILE);
 
-//pé direito inferior
+//pÃ© direito inferior
     glPushMatrix();
     glTranslatef(-13.5, -6.5, 0.0);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -94,7 +94,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé direito superior
+//pÃ© direito superior
     glPushMatrix();
     glTranslatef(-17.0, -6.5, -5.5);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -102,7 +102,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé esquerdo inferior
+//pÃ© esquerdo inferior
     glPushMatrix();
     glTranslatef(-19.5, -6.5, 3.0);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -110,7 +110,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé esquerdo superior
+//pÃ© esquerdo superior
     glPushMatrix();
     glTranslatef(-22.5, -6.5, -2.5);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -137,10 +137,10 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da cadeira da direita
+// Inicializa display lists para criaÃ§Ã£o da cadeira da direita
     glNewList(CADEIRA_D, GL_COMPILE);
 
-//pé direito inferior
+//pÃ© direito inferior
     glPushMatrix();
     glTranslatef(22.5, -6.5, 0.0);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -148,7 +148,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé direito superior
+//pÃ© direito superior
     glPushMatrix();
     glTranslatef(19.0, -6.5, -5.5);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -156,7 +156,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé esquerdo inferior
+//pÃ© esquerdo inferior
     glPushMatrix();
     glTranslatef(16.5, -6.5, 3.5);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -164,7 +164,7 @@ void init(void)
     glutWireCube(2.0);
     glPopMatrix();
 
-//pé esquerdo superior
+//pÃ© esquerdo superior
     glPushMatrix();
     glTranslatef(13.5, -6.5, -1.5);
     glRotatef(30.0, 0.0, 1.0, 0.0);
@@ -191,10 +191,10 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da luminaria
+// Inicializa display lists para criaÃ§Ã£o da luminaria
     glNewList(LUMINARIA, GL_COMPILE);
 
-//proteção da lampada
+//proteÃ§Ã£o da lampada
     glPushMatrix();
     glTranslatef (-24.5, 19.5, -39.5);
     glRotatef(-160.0, 0.0, 1.0, 0.0);
@@ -209,7 +209,7 @@ void init(void)
     gluCylinder(q, 1.0, 1.0, 10.0, 5.0, 5.0);
     glPopMatrix();
 
-//pé
+//pÃ©
     glPushMatrix();
     glTranslatef (-28.0, -11.5, -50.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
@@ -224,7 +224,7 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da garrafa
+// Inicializa display lists para criaÃ§Ã£o da garrafa
     glNewList(GARRAFA, GL_COMPILE);
 
 //cilindro inferior
@@ -257,7 +257,7 @@ void init(void)
 
     glEndList();
 
-// Inicializa display lists para criação da taça
+// Inicializa display lists para criaÃ§Ã£o da taÃ§a
     glNewList(TACA, GL_COMPILE);
 
 //cilindro superior
@@ -274,7 +274,7 @@ void init(void)
     gluCylinder(q, 0.5, 0.5, 2.5, 10.0, 5.0);
     glPopMatrix();
 
-//base da taça
+//base da taÃ§a
     glPushMatrix();
     glTranslatef (0.0, 11.5, 0.0);
     glRotatef(90.0, 1.0, 0.0, 0.0);
@@ -319,7 +319,7 @@ void display(void)
     glCallList(GARRAFA);
     glPopMatrix();
 
-//Chama o display list da taça para exibi-lo
+//Chama o display list da taÃ§a para exibi-lo
     glPushMatrix();
     glCallList(TACA);
     glPopMatrix();
@@ -345,7 +345,7 @@ void orto_cima(int w, int h)
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
-    glOrtho(-45.0, 60.0, -60.0, 75.0, 1.0, 250.0);
+    glOrtho(-60.0, 60.0, -60.0, 60.0, 1.0, 250.0);
     gluLookAt(0.0, 250.0, 15.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     glMatrixMode(GL_MODELVIEW);
 }
@@ -375,7 +375,7 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(800, 400);
+    glutInitWindowSize(400, 400);
 
     glutInitWindowPosition(100, 100);
     glutCreateWindow(argv[0]);
@@ -383,13 +383,13 @@ int main(int argc, char** argv)
     glutDisplayFunc(display);
     glutReshapeFunc(perspectiva);
 
-    glutInitWindowPosition(1000, 100);
+    glutInitWindowPosition(600, 100);
     glutCreateWindow(argv[0]);
     init();
     glutDisplayFunc(display);
     glutReshapeFunc(orto_cima);
 
-    glutInitWindowPosition(100, 600);
+    glutInitWindowPosition(1100, 100);
     glutCreateWindow(argv[0]);
     init();
     glutDisplayFunc(display);
